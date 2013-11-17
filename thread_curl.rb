@@ -12,7 +12,7 @@ begin
         threads = []
         for i in 1..3 
             threads « Thread.new { 
-                 `curl --data \id=“#{idArray.sample\” 127.0.0.1:1234`
+                 `"curl --data \id="#{idArray.sample\" 127.0.0.1:1234"`
             }
         end
         threads.each {|thread| thread.join}
